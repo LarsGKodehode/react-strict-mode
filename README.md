@@ -12,6 +12,7 @@ The gist of it is to store some state which we are checking against before proce
 - React Docs
   - [React Hooks](https://reactjs.org/docs/hooks-reference.html)
   - [React.StrictMode](https://reactjs.org/docs/strict-mode.html#ensuring-reusable-state)
+  - [Fetching data](https://beta.reactjs.org/learn/synchronizing-with-effects#fetching-data)
 - Search terms
   - [react hooks](https://www.google.com/search?q=react+hooks)
   - [react component lifecycle](https://www.google.com/search?q=react+component+lifecycle)
@@ -22,4 +23,4 @@ The gist of it is to store some state which we are checking against before proce
 This happens regardless of what you put inside the dependecy array.
 
 *React.StrictMode* mounts and then remounts every component twice in development mode.
-This is, as I understand it, for catching a set of bug related to components lifecycle.
+This part of *StrictMode* is, as I understand it, used for creating components resiliant to unmounting and remounting.  

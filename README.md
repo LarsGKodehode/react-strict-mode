@@ -1,6 +1,6 @@
 # React useEffect in *React.StrictMode*
 ## Relevant file(s)
-(FetchData.jsx)[src/components/FetchData.jsx]
+[FetchData.jsx](src/components/FetchData.jsx)
 
 
 ## TLDR

@@ -13,6 +13,7 @@ The gist of it is to store some state which we are checking against before proce
   - [React Hooks](https://reactjs.org/docs/hooks-reference.html)
   - [React.StrictMode](https://reactjs.org/docs/strict-mode.html#ensuring-reusable-state)
   - [Fetching data](https://beta.reactjs.org/learn/synchronizing-with-effects#fetching-data)
+  - [You might not need an effect](https://beta.reactjs.org/learn/you-might-not-need-an-effect)
 - Search terms
   - [react hooks](https://www.google.com/search?q=react+hooks)
   - [react component lifecycle](https://www.google.com/search?q=react+component+lifecycle)

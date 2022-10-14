@@ -26,8 +26,8 @@ const FetchData = (props) => {
     loadingData.current = true;
 
     // If you need to use an async funtion,
-    // this is the way.
     // Wrap everything inside a function
+    // If not, don't wrap it
     async function getData() {
       setTimeout(() => {
         console.log("This will only be logged once");

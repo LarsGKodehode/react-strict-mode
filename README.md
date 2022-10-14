@@ -1,6 +1,6 @@
 # React useEffect in *React.StrictMode*
 ## Relevant file(s)
-Look at **src/components/FetchData.jsx**
+Look at __src/components/FetchData.jsx__
 
 It contains one example of how to structure an API call
 when you are using *React.useEffect* inside *React.StrictMode*.

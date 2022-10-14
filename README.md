@@ -1,12 +1,21 @@
 # React useEffect in *React.StrictMode*
-## Relevant file(s)
-[FetchData.jsx](src/components/FetchData.jsx)
-
-
 ## TLDR
-It contains one example of how to use *React.useEffect* inside *React.StrictMode*, and avoiding having it get called twice.
+### Use a data fetching library
+After discussing this. The best alternative looks to be adding som 3rd party library for handling external data fetching.
+#### Libraries
+TODO
+
+### Store state between remounts
+#### FetchData.jsx
+[FetchData.jsx](src/components/FetchData.jsx)
+Example of how to use *React.useEffect* inside *React.StrictMode*, and avoiding having it get called twice.
 
 The gist of it is to store some state which we are checking against before proceeding with the call. We are using *React.useRef* for keeping this state across component remounts.
+
+### Custom hook
+#### useCategories.js
+[useCategories.js](src/utilities/customHooks/useCategories.js)
+An alternative is to use a custom hooks for fetching data.
 
 ## Further reading
 - React Docs

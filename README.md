@@ -7,7 +7,7 @@ It contains one example of how to use *React.useEffect* inside *React.StrictMode
 ## Further Reading
 - Search terms
   - [react hooks](https://www.google.com/search?q=react+hooks)
-  - [react component lifecycle]((https://www.google.com/search?q=react+component+lifecycle)
+  - [react component lifecycle](https://www.google.com/search?q=react+component+lifecycle)
 
 ## Some speculation
 *React.useEffect* gets called when the component gets mounted in Reacts virtual DOM.

@@ -7,7 +7,7 @@ It contains one example of how to use *React.useEffect* inside *React.StrictMode
 
 The gist of it is to store some state which we are checking against before proceeding with the call. We are using *React.useRef* for keeping this state across component remounts.
 
-## Further Reading
+## Further reading
 - React Docs
   - [React Hooks](https://reactjs.org/docs/hooks-reference.html)
 - Search terms

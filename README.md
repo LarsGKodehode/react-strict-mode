@@ -2,6 +2,7 @@
 ## Relevant file(s)
 Look at __src/components/FetchData.jsx__
 
+## TLDR
 It contains one example of how to use *React.useEffect* inside *React.StrictMode*, and avoiding having it get called twice.
 
 The gist of it is to store some state which we are checking against before proceeding with the call. We are using *React.useRef* for keeping this state across component remounts.

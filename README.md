@@ -11,6 +11,7 @@ The gist of it is to store some state which we are checking against before proce
 ## Further reading
 - React Docs
   - [React Hooks](https://reactjs.org/docs/hooks-reference.html)
+  - [React.StrictMode](https://reactjs.org/docs/strict-mode.html#ensuring-reusable-state)
 - Search terms
   - [react hooks](https://www.google.com/search?q=react+hooks)
   - [react component lifecycle](https://www.google.com/search?q=react+component+lifecycle)

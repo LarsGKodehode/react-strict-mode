@@ -1,6 +1,6 @@
 # React useEffect in *React.StrictMode*
 ## Relevant file(s)
-Look at __src/components/FetchData.jsx__
+__src/components/FetchData.jsx__
 
 ## TLDR
 It contains one example of how to use *React.useEffect* inside *React.StrictMode*, and avoiding having it get called twice.

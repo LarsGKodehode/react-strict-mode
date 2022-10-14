@@ -17,16 +17,15 @@ export default function useCategories() {
   
   async function fetchAndSetCategories() {
     setIsLoading(true)
-
+    
     const repsonse = await fetch(ENDPOINTS.CATEGORIES);
-
-    // Uncertain how to properly check for errors
+    // Uncertain how to properly check for errors, keeping it simple for now
     setError(repsonse.status);
 
     const data = await repsonse.json();
     setCategories(data);
 
-    // Finally
+    // Finally update state
     setIsLoading(false)
   };
 

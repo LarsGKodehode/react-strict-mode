@@ -2,8 +2,7 @@
 ## Relevant file(s)
 Look at __src/components/FetchData.jsx__
 
-It contains one example of how to structure an API call
-when you are using *React.useEffect* inside *React.StrictMode*.
+It contains one example of how to use *React.useEffect* inside *React.StrictMode*.
 
 ## Some speculation
 *React.useEffect* gets called when the component gets mounted in Reacts virtual DOM.

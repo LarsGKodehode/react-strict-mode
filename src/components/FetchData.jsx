@@ -1,8 +1,15 @@
 // Library
 import {
+  useState,
   useRef,
   useEffect
 } from "react";
+
+
+// Keep all your endpoint stored somewhere easly accessible like in the Global object
+const ENDPOINTS = {
+  RANDOM_ACTIVITY: "https://www.boredapi.com/api/activity/" // Your endpoint here
+};
 
 
 /**
@@ -10,6 +17,9 @@ import {
  * without triggering the code twice
  */
 const FetchData = (props) => {
+  // Stores fetched data
+  const [ data, setData ] = useState(null);
+
   // The useRef hook returns an object which
   // stays consistent across this component lifecycle
   const isLoading = useRef(false);
@@ -29,13 +39,25 @@ const FetchData = (props) => {
     // Wrap everything inside a function
     // If not, don't wrap it
     async function getData() {
-      setTimeout(() => {
-        console.log("This will only be logged once");
+      try {
+        const response = await fetch(ENDPOINTS.RANDOM_ACTIVITY)
 
-        // When everything has either succeded or failed
-        // update the state
+        // Quit if request unsuccessful
+        if(!response.ok) {
+          const error = new Error(response.statusText);
+          setError(error);
+          return
+        };
+
+        const data = await response.json();
+        setData(data);
+    
+    } catch (error) {
+      // Catches potential errors calling fetch or when converting the response object to JSON
+      setError(error);
+      } finally {
         isLoading.current = false;
-      }, 1000);
+      }
     };
 
     // Call the function

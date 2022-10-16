@@ -5,15 +5,15 @@ After discussing this. The best alternative looks to be adding som 3rd party lib
 #### Libraries
 TODO
 
-### Store state between remounts
-#### FetchData.jsx
+## Store state between remounts
+### FetchData.jsx
 [FetchData.jsx](src/components/FetchData.jsx)
 Example of how to use *React.useEffect* inside *React.StrictMode*, and avoiding having it get called twice.
 
 The gist of it is to store some state which we are checking against before proceeding with the call. We are using *React.useRef* for keeping this state across component remounts.
 
-### Custom hook
-#### useCategories.js
+## Custom hook
+### useCategories.js
 [useCategories.js](src/utilities/customHooks/useCategories.js)
 An better alternative, than writing this each time you need to make a request, is to extract it into a custom hooks for fetching data.
 

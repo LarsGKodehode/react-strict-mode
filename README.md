@@ -15,7 +15,7 @@ The gist of it is to store some state which we are checking against before proce
 ## Custom hooks
 ### useCategories.js
 [useCategories.js](src/utilities/customHooks/useCategories.js)
-An better alternative, than writing this each time you need to make a request, is to extract it into a custom hooks for fetching data.
+A better alternative than the FetchData component. Extract the functionality into a custom hooks for fetching data.
 
 ## Further reading
 - React Docs

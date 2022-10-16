@@ -12,6 +12,11 @@ Example of how to use *React.useEffect* inside *React.StrictMode*, and avoiding 
 
 The gist of it is to store some state which we are checking against before proceeding with the call. We are using *React.useRef* for keeping this state across component remounts.
 
+## Clean up your effects
+### **TODO** FetchCleanup.jsx
+[link to file here](/)
+Cleaning up the effects that needs cleanup. Not as relevant to fetch calls, but for setInterval and related async functions, you need to clean them up incase the component gets unmounted before it finishes executing.
+
 ## Custom hooks
 ### useCategories.js
 [useCategories.js](src/utilities/customHooks/useCategories.js)
@@ -34,4 +39,4 @@ A better alternative than the FetchData component. Extract the functionality int
 This happens regardless of what you put inside the dependecy array.
 
 *React.StrictMode* mounts and then remounts every component twice in development mode.
-This part of *StrictMode* is, as I understand it, used for creating components resiliant to unmounting and remounting.  
+This part of *StrictMode* is, as I understand it, used for creating components resiliant to unmounting and remounting.

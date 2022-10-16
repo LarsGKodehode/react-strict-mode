@@ -15,10 +15,11 @@ The gist of it is to store some state which we are checking against before proce
 ### Custom hook
 #### useCategories.js
 [useCategories.js](src/utilities/customHooks/useCategories.js)
-An alternative is to use a custom hooks for fetching data.
+An better alternative, than writing this each time you need to make a request, is to extract it into a custom hooks for fetching data.
 
 ## Further reading
 - React Docs
+  - [React Docs](https://beta.reactjs.org/)
   - [React Hooks](https://reactjs.org/docs/hooks-reference.html)
   - [React.StrictMode](https://reactjs.org/docs/strict-mode.html#ensuring-reusable-state)
   - [Fetching data](https://beta.reactjs.org/learn/synchronizing-with-effects#fetching-data)

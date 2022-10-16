@@ -4,7 +4,7 @@ import {
   useEffect
 } from 'react';
 
-// Keep all your endpoint stored somwher easly accessible like a Global file
+// Keep all your endpoint stored somewhere easly accessible like in the Global object
 const ENDPOINTS = {
   CATEGORIES: "www.api.example.com/" // Your endpoint here
 };
@@ -21,7 +21,7 @@ export default function useCategories() {
     try {
       const repsonse = await fetch(ENDPOINTS.CATEGORIES);
 
-      // 
+      // Quit if request was unsuccessful
       if (!repsonse.ok) {
         const error = new Error(repsonse.statusText);
         setError(error);

@@ -12,7 +12,7 @@ import {
 const FetchData = (props) => {
   // The useRef hook returns an object which
   // stays consistent across this component lifecycle
-  const loadingData = useRef(false);
+  const isLoading = useRef(false);
 
   // Grab data on mounting,
   // useEffect is called each times this components remounts
@@ -20,10 +20,10 @@ const FetchData = (props) => {
   // I am not an expert on the lifecycle
   useEffect(() => {
     // Check if task is in process
-    if(loadingData.current) return;
+    if(isLoading.current) return;
 
     // Set status
-    loadingData.current = true;
+    isLoading.current = true;
 
     // If you need to use an async funtion,
     // Wrap everything inside a function
@@ -34,7 +34,7 @@ const FetchData = (props) => {
 
         // When everything has either succeded or failed
         // update the state
-        loadingData.current = false;
+        isLoading.current = false;
       }, 1000);
     };
 

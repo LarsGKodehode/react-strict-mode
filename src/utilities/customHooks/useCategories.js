@@ -18,15 +18,25 @@ export default function useCategories() {
   async function fetchAndSetCategories() {
     setIsLoading(true)
     
-    const repsonse = await fetch(ENDPOINTS.CATEGORIES);
-    // Uncertain how to properly check for errors, keeping it simple for now
-    setError(repsonse.status);
+    try {
+      const repsonse = await fetch(ENDPOINTS.CATEGORIES);
 
-    const data = await repsonse.json();
-    setCategories(data);
+      // 
+      if (!repsonse.ok) {
+        const error = new Error(repsonse.statusText);
+        setError(error);
+        return
+      }
 
-    // Finally update state
-    setIsLoading(false)
+      const data = await repsonse.json();
+      setCategories(data);
+
+    } catch (error) {
+      // Cathes potential errors calling fetch or when converting the response object to JSON
+      setError(error);
+    } finally {
+      setIsLoading(false);
+    };
   };
 
   useEffect(() => { fetchAndSetCategories() }, []);
